@@ -34,8 +34,10 @@ import {
  * @param {object} config.preset - A breakpoint preset to use
  */
 export function updateBreakpoints({ breakpoints, preset }) {
-	const validatedPreset = validatePreset(preset);
-	const sanitisedBreakpoints = sanitiseBreakpoints(breakpoints);
+	const validatedPreset = preset ? validatePreset(preset) : false;
+	const sanitisedBreakpoints = breakpoints
+		? sanitiseBreakpoints(breakpoints)
+		: false;
 
 	if (validatedPreset === false && !sanitisedBreakpoints) {
 		throw new TypeError(
