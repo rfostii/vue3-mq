@@ -1,5 +1,5 @@
-const path = require("path");
 const { sidebar, navbar } = require("./configs");
+const path = require("path");
 
 module.exports = {
 	// site config
