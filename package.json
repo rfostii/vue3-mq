@@ -1,12 +1,18 @@
 {
 	"name": "vue3-mq",
-	"version": "3.1.1",
-	"description": "Build responsive design into your Vue3 app",
+	"version": "3.1.2",
+	"description": "Build responsive design into your Vue 3 app",
 	"files": [
 		"dist/*"
 	],
 	"main": "./dist/vue3-mq.umd.js",
-	"module": "./dist/vue3-mq.es.js",
+	"module": "./dist/vue3-mq.js",
+	"exports": {
+		".": {
+			"import": "./dist/vue3-mq.js",
+			"require": "./dist/vue3-mq.umd.js"
+		}
+	},
 	"browserslist": [
 		"> 1%",
 		"last 2 versions",
