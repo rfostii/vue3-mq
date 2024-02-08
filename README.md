@@ -23,7 +23,7 @@ Bring fully reactive, responsive design to your Vue 3 project with Vue3-MQ, a pl
 
 ## Documentation
 
-Check out the documentation at https://vue3-mq.info.
+Check out the documentation at [Vue3 MQ: Github Pages](https://craigrileyuk.github.io/vue3-mq/).
 
 ## License
 
