@@ -61,12 +61,20 @@ export default defineConfig({
 				link: "/faq",
 			},
 		],
-
 		socialLinks: [
 			{
 				icon: "github",
 				link: "https://github.com/craigrileyuk/vue3-mq",
 			},
+			{
+				icon: "npm",
+				link: "https://www.npmjs.com/package/vue3-mq",
+			},
 		],
+		footer: {
+			message: "Released under the MIT License.",
+			copyright:
+				"Copyright © 2022-2024 Craig Riley, forked from the vue-mq project by Alexandre Bonaventure",
+		},
 	},
 });

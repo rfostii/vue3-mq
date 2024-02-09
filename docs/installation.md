@@ -22,6 +22,8 @@ pnpm add vue3-mq
 
 :::
 
+## Standard Installation
+
 Now add the plugin to your app entry file
 
 ```js
@@ -30,4 +32,29 @@ import { Vue3Mq } from "vue3-mq";
 const app = createApp({});
 app.use(Vue3Mq);
 app.mount("#app");
+```
+
+## Global Installation
+
+You can now use the `global` config option for the plugin to install the `<MqResponsive>` component and the `$mq` object globally in your application.
+
+```js
+import { createApp } from "vue";
+import { Vue3Mq } from "vue3-mq";
+
+const app = createApp();
+app.use(Vue3Mq, {
+	global: true,
+});
+
+app.mount("#app");
+```
+
+Then in your templates:
+
+```vue
+<template>
+	<MqResponsive target="lg+">Large</MqResponsive>
+	<div v-if="$mq.lgPlus">Large</div>
+</template>
 ```

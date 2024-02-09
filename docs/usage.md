@@ -36,20 +36,3 @@ export default {
 ```
 
 :::
-
-## Global Installation
-
-If you'd like to have the MQ object and the component globally available in your app, you can set it up like this in your entry file:
-
-```js
-import { createApp } from "vue";
-import { Vue3Mq, MqResponsive, mqObject } from "vue3-mq";
-
-const app = createApp();
-app.use(Vue3Mq);
-app.component("mq-responsive", MqResponsive);
-// Below available for version 3.2+
-app.config.globalProperties.$mq = mqObject;
-
-app.mount("#app");
-```

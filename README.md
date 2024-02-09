@@ -12,14 +12,14 @@
 
 Bring fully reactive, responsive design to your Vue 3 project with Vue3-MQ, a plugin which allows your components and pages to adapt to changes in the browser environment.
 
-- Completely customisable breakpoints
-- Includes MQ-Responsive Vue component for unparalleled ease of use
-- Access a fully reactive environment analysis object
-- Adapt to your users' preference for light or dark themes
-- React to changes in screen orientation
-- Respect user preference for reduced motion direct in your Vue files
-- Choose from a range of breakpoint presets, including Bootstrap 4, Bootstrap 5, Vuetify or Tailwind
-- Render on single breakpoints, arrays of breakpoints or ranges
+-   Completely customisable breakpoints
+-   Includes MQ-Responsive Vue component for unparalleled ease of use
+-   Access a fully reactive environment analysis object
+-   Adapt to your users' preference for light or dark themes
+-   React to changes in screen orientation
+-   Respect user preference for reduced motion direct in your Vue files
+-   Choose from a range of breakpoint presets, including Bootstrap 4, Bootstrap 5, Vuetify or Tailwind
+-   Render on single breakpoints, arrays of breakpoints or ranges
 
 ## Documentation
 
@@ -37,12 +37,11 @@ Finding this package useful? Then help keep the coffee flowing.
 
 ## Other Packages by the Author
 
-- [Tailwind Fluid Typography](https://github.com/craigrileyuk/tailwind-fluid-typography)
-- [Laravel Mix Ziggy Watch](https://github.com/craigrileyuk/laravel-mix-ziggy-watch)
-- [Vue 3 Snackbar](https://github.com/craigrileyuk/vue3-snackbar)
-- [Vue 3 Slide Up Down](https://github.com/craigrileyuk/vue3-slide-up-down)
-- [Vue 3 Icon](https://github.com/craigrileyuk/vue3-icon)
-
+-   [Tailwind Fluid Typography](https://github.com/craigrileyuk/tailwind-fluid-typography)
+-   [Laravel Mix Ziggy Watch](https://github.com/craigrileyuk/laravel-mix-ziggy-watch)
+-   [Vue 3 Snackbar](https://github.com/craigrileyuk/vue3-snackbar)
+-   [Vue 3 Slide Up Down](https://github.com/craigrileyuk/vue3-slide-up-down)
+-   [Vue 3 Icon](https://github.com/craigrileyuk/vue3-icon)
 
 ## Bugs / Support
 

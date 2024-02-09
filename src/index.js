@@ -1,4 +1,4 @@
 export { default as MqResponsive } from "./component";
 export { default as Vue3Mq } from "./plugin";
 export { useMq, updateBreakpoints } from "./composables";
-export { availableBreakpoints, mqState as mqObject } from "./store";
+export { availableBreakpoints } from "./store";

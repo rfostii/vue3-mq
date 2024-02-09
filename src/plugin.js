@@ -1,4 +1,5 @@
 import { updateBreakpoints } from "./composables";
+export { default as MqResponsive } from "./component";
 import {
 	setDefaultBreakpoint,
 	setDefaultMotion,
@@ -23,6 +24,7 @@ import {
  * @param {string} config.defaultOrientation - The screen orientation to set when the plugin is executed in a non-browser context (e.g. SSR)
  * @param {string} config.defaultMotion - The motion preference to set when the plugin is executed in a non-browser context (e.g. SSR)
  * @param {string} config.defaultTheme - The theme to set when the plugin is executed in a non-browser context (e.g. SSR) or for users with no OS preference
+ * @param {boolean} config.global - Install the MQ Object and component globally in the Vue application
  */
 const install = (
 	app,
@@ -33,6 +35,7 @@ const install = (
 		defaultOrientation = "landscape",
 		defaultMotion = "no-preference",
 		defaultTheme,
+		global = false,
 	} = {}
 ) => {
 	try {
@@ -48,6 +51,11 @@ const install = (
 
 		app.provide("mq", mqState);
 		app.provide("updateBreakpoints", updateBreakpoints);
+
+		if (global === true) {
+			app.component("MqResponsive", MqResponsive);
+			app.config.globalProperties.$mq = mqState;
+		}
 
 		updateBreakpoints({ breakpoints, preset });
 	} catch (e) {
